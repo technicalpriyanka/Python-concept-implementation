@@ -1,0 +1,14 @@
+with open('myfile.txt', 'r') as f:
+    print(type(f))
+    f.write("Hello World")  # write to the file
+
+
+    f.seek(10)
+    data = f.read(5)
+    print(data)  # read 5 bytes from the file
+    
+    #tell method
+    print(f.tell())
+
+    #truncate method
+    f.truncate(10)
